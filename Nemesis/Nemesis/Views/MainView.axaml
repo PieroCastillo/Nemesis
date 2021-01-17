@@ -1,0 +1,47 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Nemesis.Views.MainView">
+	<UserControl.Styles>
+		<Style Selector="Border#PART_InternalBorder">
+			<Setter Property="Background" Value="Transparent"/> 
+		</Style>
+	</UserControl.Styles>
+	<AuraTabView Name="TabView" TemplateApplied="TabViewTemplateApplied"  ClickOnAddingButton="CreateDocument">
+		<AuraTabView.Header>
+			<Border Padding="5" Height="35">
+				<Border.ContextMenu>
+					<ContextMenu>
+						<MenuItem Header="New">
+							<MenuItem Header="Sequence"/>
+						</MenuItem>
+						<MenuItem Header="Open"/>
+						<Separator/>
+						<MenuItem Header="Print"/>
+						<Separator/>
+						<MenuItem Header="Close"/>
+						<MenuItem Header="Close App"/>
+					</ContextMenu>
+				</Border.ContextMenu>
+				<Image Source="/Assets/NemesisLogo.png" Stretch="Fill"/>
+			</Border>
+		</AuraTabView.Header>
+		<AuraTabView.FallBackContent>
+			<Border Padding="30">
+				<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+					<Image Source="avares://Nemesis/Assets/NemesisLogo.png" Height="250" Opacity="0.6"/>
+					<!--<TextBlock Text="Nemesis"
+							   FontSize="40"
+							   FontWeight="ExtraBold"
+							   HorizontalAlignment="Center">
+						<TextBlock.RenderTransform>
+							<SkewTransform AngleX="-15"/>
+						</TextBlock.RenderTransform>
+					</TextBlock>-->
+				</StackPanel>
+			</Border>
+		</AuraTabView.FallBackContent>
+	</AuraTabView>
+</UserControl>
