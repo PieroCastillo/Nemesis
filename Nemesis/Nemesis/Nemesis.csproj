@@ -13,6 +13,9 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.10.0-rc1" />
     <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0-rc1" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-rc1" />
+    <PackageReference Include="Dock.Avalonia" Version="0.10.0-rc1" />
+    <PackageReference Include="Dock.Avalonia.Themes.Default" Version="0.10.0-rc1" />
+    <PackageReference Include="Dock.Model.Avalonia" Version="0.10.0-rc1" />
     <PackageReference Include="SkiaSharp" Version="2.80.2" />
   </ItemGroup>
 </Project>

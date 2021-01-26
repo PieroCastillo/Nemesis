@@ -12,5 +12,6 @@
 		
 		<StyleInclude Source="avares://Aura.UI/AuraAcrylicBase.xaml"/>
 		<StyleInclude Source="avares://Aura.UI/AuraUI.xaml"/>
+		<StyleInclude Source="avares://Dock.Avalonia.Themes.Default/DefaultTheme.xaml"/>
     </Application.Styles>
 </Application>
